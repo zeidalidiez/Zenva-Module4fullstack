@@ -3,8 +3,55 @@
    <head>
       <meta charset="utf-8">
       <title>CSS Media Queries</title>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+       <style>
+/*        Applies to any device*/
+           * {
+            margin: 0;
+           }
+           
+           
+           body {
+               background: rgba(255,0,0,.25)
+           }
+           header {
+               background: rgba(0,0,0,.25);
+                   margin-bottom: 10px;
+           }
+                      section {
+               background: rgba(0,0,0,.25);
+                                             margin-bottom: 10px;
+           }
+                      aside {
+               background: rgba(0,0,0,.25);
+                                             margin-bottom: 10px;
+           }
+                      footer {
+               background: rgba(0,0,0,.25);
+                                             margin-bottom: 10px;
+           }
+           
+/*           Applies to any device over 768 pixels */
+           @media screen and (min-width: 768px) {
+                   body {
+               background: rgba(0,255,0,.25)
+           }
+/*               Applies to any device over 1200 pixels */
+                @media screen and (min-width: 1200px) {
+                   body {
+               background: rgba(0,0,255,.25)
+           }
+           }
+           }
+       </style>
    </head>
    <body>
+       
+       <header>header</header>
+       <section>section</section>
+       <aside>aside</aside>
+       <footer>footer</footer>
       
    </body>
 </html>
